@@ -50,3 +50,47 @@ Output:
 */
 
 
+
+
+import java.util.*;
+import java.lang.*;
+import java.util.Arrays;
+ 
+class Main
+{
+	public static void main (String[] args) throws java.lang.Exception
+	{
+		Scanner sc = new Scanner(System.in);
+        int t = sc.nextInt();
+        while(t-- != 0) {
+            int n = sc.nextInt();
+            int m[] = new int[n];
+            int w[] = new int[n];
+            for(int i = 0; i < n; i++)
+                m[i] = sc.nextInt();
+            for(int i = 0; i < n; i++)
+                w[i] = sc.nextInt();
+            Arrays.sort(m);
+            Arrays.sort(w);
+            int sum = 0;
+            for(int i = 0; i < n; i++)
+                sum += m[i] * w[i];
+            System.out.println(sum);
+        }	
+	}
+} 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
